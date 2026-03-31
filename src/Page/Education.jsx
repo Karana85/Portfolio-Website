@@ -1,6 +1,7 @@
 import React from 'react'
 import KCELOGO from '../images/KCELOGO.png'
 import Bspadalkar from '../images/BSLogo.png'
+import Tanwani from '../images/Tanwani.png'
 
 const DataEducation = [
   {
@@ -26,7 +27,7 @@ const DataEducation = [
     institution: "Tanwani Vidya Mandir, Bajajnagar, Aurangabad",
     degree: "State Board of Maharashtra 10th",
     year: "2018 - 2019",
-    img: `${KCELOGO}`,
+    img: Tanwani,
     Percentage: "68.20%",
     description: "Completed Secondary Education with a strong academic record, demonstrating dedication and a commitment to learning."
   }
@@ -46,7 +47,7 @@ const Education = () => {
           <div className='flex justify-center mt-10' key={data.id}>
             <div className='max-w-3xl w-80 md:w-full bg-white/90 dark:bg-slate-900/80 border border-slate-200/70 dark:border-slate-700/70 rounded-3xl p-6 shadow-lg'>
               <div className='flex flex-col md:flex-row items-center gap-6 '>
-                <img src={data.img} alt={data.institution} className='h-24 w-24 rounded-full object-contain' />
+                <img src={data.img}  className='h-24 w-24 rounded-full object-contain' />
                 <div className='text-slate-700 dark:text-slate-300 space-y-2'>
                   <div className='text-base md:text-lg font-semibold text-slate-900 dark:text-slate-50'>{data.institution}</div>
                   <div className='text-sm'>{data.degree}</div>
