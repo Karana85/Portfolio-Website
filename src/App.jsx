@@ -5,6 +5,7 @@ import Home from "./Page/Home"
 import Navbar from "./Page/Navbar"
 import Programming from "./Page/Programming"
 import { useState, useEffect } from "react";
+import Project from "./Page/Project"
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
